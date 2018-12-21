@@ -10,7 +10,9 @@ void main()
 {
 	int id = fork();
 	if(id == 0)
-		printf("Child Process, PID : %ld\n", (long)getpid());
-	else
-		printf("Parent Process, PID : %ld\n", (long)getpid());
+		printf("Child Process, PID : %ld, PPID : %ld\n", (long)getpid(), (long)getppid());
+	else if(id > 0)
+		printf("Parent Process, PID : %ld, PPID : %ld\n", (long)getpid(), (long)getppid());
+	else if(id < 0)
+		printf("Failed fork()\n");
 }
