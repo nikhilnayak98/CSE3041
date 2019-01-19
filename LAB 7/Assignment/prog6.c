@@ -1,0 +1,1 @@
+After a successful exec*() call, no code in the previous program will ever run again. The process's memory space is overwritten with the new process. The exec*() functions replaces the process that called them with the executable provided as argument.
