@@ -1,9 +1,0 @@
-/*
-*Name: Nikhil Ranjan Nayak
-*Regd No: 1641012040
-*Desc: file read, write with permissions
-*/
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
