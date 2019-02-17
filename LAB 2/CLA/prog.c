@@ -16,7 +16,7 @@ void main(int argc, char *argv[])
 		int_array[i - 1] = atoi(argv[i]);
 	
 	printf("\nOriginal Array : ");
-	for(i = 1; i < argc - 1; i++)
+	for(i = 0; i < argc - 1; i++)
 		printf("%d ", int_array[i]);
 	
 	bubble_sort(int_array, argc - 1);
